@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AboutMeV2"
+             x:Class="AboutMeV2.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Text="A" 
+           HorizontalOptions="Start"
+           VerticalOptions="Start" 
+           Margin="20"
+           FontFamily="TimesNewRoman"
+           FontSize="25"
+           />
+
+        <Label Text="Guide"
+           HorizontalOptions="Start"
+           VerticalOptions="Start"
+           Margin="20"
+           FontFamily="TimesNewRoman"
+           FontSize="25"
+           />
+
+        <Label Text="To"
+           HorizontalOptions="Start"
+           VerticalOptions="Start"
+           Margin="20"
+           FontFamily="TimesNewRoman"
+           FontSize="25"
+           />
+
+        <Label Text="Blake"
+           HorizontalOptions="Start"
+           VerticalOptions="Start"
+           Margin="20"
+           FontFamily="TimesNewRoman"
+           FontSize="25"
+           />
+
+        <Label Text="Bicknell"
+           HorizontalOptions="Start"
+           VerticalOptions="Start"
+           Margin="20"
+           FontFamily="TimesNewRoman"
+           FontSize="25"
+           />
+
+        <Button Grid.Row="6" Grid.Column="0"
+           Text="About Me"
+           Margin="20"
+           />
+
+        <Button Grid.Row="7" Grid.Column="0"
+           Text="Skills"
+           Margin="20"
+           />
+
+        <Button Grid.Row="8" Grid.Column="0"
+           Text="Contact Me"
+           Margin="20"
+           />
+    </Grid>
+
+</ContentPage>
