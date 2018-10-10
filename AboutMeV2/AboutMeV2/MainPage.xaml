@@ -4,7 +4,10 @@
              xmlns:local="clr-namespace:AboutMeV2"
              x:Class="AboutMeV2.MainPage">
 
-    <Grid>
+    <Grid 
+        RowSpacing="5" 
+        BackgroundColor="Blue"
+    >
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
@@ -14,62 +17,121 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <Label Text="A" 
+        <StackLayout>
+        <Label
+           Text="A" 
+           TextColor="Yellow"
+           Grid.Row="0"
            HorizontalOptions="Start"
            VerticalOptions="Start" 
-           Margin="20"
+           Margin="10"
            FontFamily="TimesNewRoman"
-           FontSize="25"
+           FontSize="23"
+           
            />
 
-        <Label Text="Guide"
+        <Label 
+           Text="Guide"
+           TextColor="Yellow"
+           Grid.Row="1"
            HorizontalOptions="Start"
            VerticalOptions="Start"
-           Margin="20"
+           Margin="10"
            FontFamily="TimesNewRoman"
-           FontSize="25"
+           FontSize="23"
+           
            />
 
-        <Label Text="To"
+        <Label 
+           Text="To"
+           TextColor="Yellow"
+           Grid.Row="2"
            HorizontalOptions="Start"
            VerticalOptions="Start"
-           Margin="20"
+           Margin="10"
            FontFamily="TimesNewRoman"
-           FontSize="25"
+           FontSize="23"
+           
            />
 
-        <Label Text="Blake"
+        <Label 
+           Text="Blake"
+           TextColor="Yellow"
+           Grid.Row="3"
            HorizontalOptions="Start"
            VerticalOptions="Start"
-           Margin="20"
+           Margin="10"
            FontFamily="TimesNewRoman"
-           FontSize="25"
+           FontSize="23"
+           
            />
 
-        <Label Text="Bicknell"
+        <Label 
+           Text="Bicknell"
+           TextColor="Yellow"
+           Grid.Row="4"
            HorizontalOptions="Start"
            VerticalOptions="Start"
-           Margin="20"
+           Margin="10"
            FontFamily="TimesNewRoman"
-           FontSize="25"
+           FontSize="23"
+           
            />
 
-        <Button Grid.Row="6" Grid.Column="0"
+        </StackLayout>
+
+        <Button 
            Text="About Me"
-           Margin="20"
+           TextColor="White"
+           BackgroundColor="Black"
+           Grid.Row="5" 
+           Grid.Column="1"
+           Margin="10"
+           Grid.ColumnSpan="2"
+           HeightRequest="25"
            />
 
-        <Button Grid.Row="7" Grid.Column="0"
+        <Button 
            Text="Skills"
-           Margin="20"
+           TextColor="White"
+           BackgroundColor="Black"
+           Grid.Row="6" 
+           Grid.Column="1"
+           Margin="10"
+           Grid.ColumnSpan="2"
+           HeightRequest="25"
            />
 
-        <Button Grid.Row="8" Grid.Column="0"
+        <Button 
            Text="Contact Me"
-           Margin="20"
+           TextColor="White"
+           BackgroundColor="Black"
+           Grid.Row="7" 
+           Grid.Column="1"
+           Margin="10"
+           Grid.ColumnSpan="2"
+           HeightRequest="25"
            />
+
+        <Image
+           Grid.Row="5"
+           Grid.Column="0"
+        />
+
+        <Image
+           Grid.Row="6"
+           Grid.Column="0"
+        />
+
+        <Image
+           Grid.Row="7"
+           Grid.Column="0"
+        />
+
+
     </Grid>
 
 </ContentPage>
