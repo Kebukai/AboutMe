@@ -5,9 +5,9 @@
              x:Class="AboutMeV2.MainPage">
 
     <Grid 
-        RowSpacing="5" 
-        BackgroundColor="Blue"
-    >
+        RowSpacing="0"
+        >
+
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
@@ -20,11 +20,40 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <StackLayout>
         <Label
+            BackgroundColor="Navy"
+            HeightRequest="200"
+            WidthRequest="1000"
+            Grid.ColumnSpan="3"
+            Grid.RowSpan="2"
+            Opacity="1"
+            />
+
+        <Label
+            BackgroundColor="Blue"
+            HeightRequest="200"
+            WidthRequest="1000"
+            Grid.ColumnSpan="3"
+            Grid.Row="2"
+            Grid.RowSpan="3"
+            Opacity="1"
+            />
+
+        <Label
+            BackgroundColor="RoyalBlue"
+            HeightRequest="200"
+            WidthRequest="1000"
+            Grid.ColumnSpan="3"
+            Grid.Row="5"
+            Grid.RowSpan="3"
+            Opacity="1"
+            />
+        
+        <StackLayout>
+
+            <Label
            Text="A" 
-           TextColor="Yellow"
-           Grid.Row="0"
+           TextColor="White"
            HorizontalOptions="Start"
            VerticalOptions="Start" 
            Margin="10"
@@ -35,8 +64,7 @@
 
         <Label 
            Text="Guide"
-           TextColor="Yellow"
-           Grid.Row="1"
+           TextColor="White"
            HorizontalOptions="Start"
            VerticalOptions="Start"
            Margin="10"
@@ -47,8 +75,7 @@
 
         <Label 
            Text="To"
-           TextColor="Yellow"
-           Grid.Row="2"
+           TextColor="White"
            HorizontalOptions="Start"
            VerticalOptions="Start"
            Margin="10"
@@ -59,8 +86,7 @@
 
         <Label 
            Text="Blake"
-           TextColor="Yellow"
-           Grid.Row="3"
+           TextColor="White"
            HorizontalOptions="Start"
            VerticalOptions="Start"
            Margin="10"
@@ -71,8 +97,7 @@
 
         <Label 
            Text="Bicknell"
-           TextColor="Yellow"
-           Grid.Row="4"
+           TextColor="White"
            HorizontalOptions="Start"
            VerticalOptions="Start"
            Margin="10"
@@ -92,6 +117,8 @@
            Margin="10"
            Grid.ColumnSpan="2"
            HeightRequest="25"
+           x:Name="AboutMeButton"
+           
            />
 
         <Button 
@@ -103,6 +130,7 @@
            Margin="10"
            Grid.ColumnSpan="2"
            HeightRequest="25"
+           x:Name="SkillsButton"
            />
 
         <Button 
@@ -114,23 +142,47 @@
            Margin="10"
            Grid.ColumnSpan="2"
            HeightRequest="25"
+           x:Name="ContactButton"
            />
 
         <Image
+           Source="person.png"
            Grid.Row="5"
            Grid.Column="0"
-        />
+            >
+            <!--<Image.GestureRecognizers>
+                <TapGestureRecognizer
+           Tapped="TapGestureRecognizer_Tapped"
+           NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            -->
+        </Image>
 
         <Image
+           Source="wrench.png"
            Grid.Row="6"
-           Grid.Column="0"
-        />
+           Grid.Column="0" 
+           >
+            <!--<Image.GestureRecognizers>
+                <TapGestureRecognizer
+           Tapped="TapGestureRecognizer_Tapped"
+           NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            -->
+        </Image>
 
         <Image
+           Source="message.png"
            Grid.Row="7"
            Grid.Column="0"
-        />
-
+           >
+           <!--<Image.GestureRecognizers>
+                <TapGestureRecognizer
+           Tapped="TapGestureRecognizer_Tapped"
+           NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            -->
+        </Image>
 
     </Grid>
 
