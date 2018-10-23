@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AboutMeV2.AboutPage">
+<ContentPage.Content>
+     <Grid
+        ColumnSpacing="0"
+        RowSpacing="0"
+
+     >
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label
+                BackgroundColor="Blue"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Grid.Row="0"
+                Grid.RowSpan="5"
+                >
+            </Label>
+
+            <Image
+             Source="selfie.jpg"
+             Grid.Column="1"
+             Grid.RowSpan="2"
+             Margin="0,20,0,40"
+             >
+            </Image>
+
+            <BoxView
+                Color="White"
+                Grid.Column="1"
+                Grid.RowSpan="2"
+                Margin="0,20,0,40"
+                >
+            </BoxView>
+ 
+         <Label 
+             Text="     Welcome the page that tells you all about the tragic 
+             backstory of the person who created this app. Hello to those reaidng this page! I am Blake Bicknell, the creator 
+             of this app and I wanted to tell you a little more about myself. (That first bit was a small joke, my life isn't 
+             actually tragic)"
+             TextColor="White"
+             Margin="15"
+             Grid.Row="2"
+             Grid.RowSpan="1"
+             Grid.Column="0"
+             Grid.ColumnSpan="3"
+         />
+
+            <Label 
+             Text="      I was born in raised in a town called Pittsburg (the 
+             Kansas one not the Pensylvania one). I grew up and as 
+             of the time that this app has been made still live here. I 
+             Love stories and mediums that tell them, books, 
+             games, etc. I am studying to get a degree in Computer 
+             Information Systems. Hopefully I'll be able to land a job 
+             in a place where I can visit everyone I know in different 
+             states without much trouble or driving." 
+             TextColor="White"
+             Margin="15"
+             Grid.Row="3"
+             Grid.RowSpan="2"
+             Grid.Column="0"
+             Grid.ColumnSpan="3"
+         />
+        </Grid>
+</ContentPage.Content>
+</ContentPage>
