@@ -2,35 +2,66 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AboutMeV2.ContactPage">
-    <ContentPage.Content>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
+<ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
 
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
 
-            <Label
-                BackgroundColor="DeepSkyBlue"
-                Grid.Column="0"
-                Grid.ColumnSpan="3"
-                Grid.Row="0"
-                Grid.RowSpan="7"
-                >
-            </Label>
+               <Label
+                     BackgroundColor="DeepSkyBlue"
+                     Grid.Column="0"
+                     Grid.ColumnSpan="3"
+                     Grid.Row="0"
+                     Grid.RowSpan="7"
+                />
 
-            <Label 
-             Text="                             Welcome to Xamarin.Forms!" 
-             Grid.Column="0"
-             Grid.ColumnSpan="3"
-             Grid.Row="3"
-            />
-        </Grid>
-    </ContentPage.Content>
+                <Image
+                    Source="message.png"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="1"
+                    Grid.Row="0"
+                    Grid.RowSpan="2"
+                    Margin="0,0,0,0"
+                />
+
+                <Entry
+                    Grid.Row="1"
+                    Grid.ColumnSpan="3"
+                    Margin="10,0,0,0"
+                />
+                
+                <Entry
+                    Grid.Row="1"
+                    Grid.RowSpan="2"
+                    Grid.ColumnSpan="3"
+                    Margin="10,0,0,50"
+                />
+                
+                <Entry
+                    Grid.Row="3"
+                    Grid.ColumnSpan="3"
+                    Margin="10,0,0,50"
+                />
+
+                <Button
+                    Text="Send Mail"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    Grid.Row="5" 
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    Margin="75,20,75,20"
+                    HeightRequest="25"
+                    WidthRequest="100"
+                    
+                />
+            </Grid>
+        </ScrollView>
+</ContentPage.Content>
 </ContentPage>

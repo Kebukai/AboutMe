@@ -28,7 +28,7 @@
             Grid.ColumnSpan="1"
             Grid.RowSpan="8"
             Opacity="1"
-            />
+        />
 
         <Label
             BackgroundColor="Black"
@@ -38,7 +38,7 @@
             Grid.ColumnSpan="3"
             Grid.RowSpan="5"
             Opacity="1"
-            />
+        />
 
         <Label
             BackgroundColor="Blue"
@@ -49,7 +49,7 @@
             Grid.Row="5"
             Grid.RowSpan="1"
             Opacity="1"
-            />
+        />
 
         <Label
             BackgroundColor="RoyalBlue"
@@ -60,7 +60,7 @@
             Grid.Row="6"
             Grid.RowSpan="1"
             Opacity="1"
-            />
+        />
 
         <Label
             BackgroundColor="DeepSkyBlue"
@@ -71,66 +71,66 @@
             Grid.Row="7"
             Grid.RowSpan="1"
             Opacity="1"
-            />
+            
+        />
 
-        <StackLayout>
+           <Label
+               Text="A" 
+               TextColor="White"
+               HorizontalOptions="Start"
+               VerticalOptions="Start" 
+               Margin="5,25,0,0"
+               FontFamily="TimesNewRoman"
+               FontSize="20" 
+           />
 
-            <Label
-           Text="A" 
-           TextColor="White"
-           HorizontalOptions="Start"
-           VerticalOptions="Start" 
-           Margin="10"
-           FontFamily="TimesNewRoman"
-           FontSize="21"
-           
+           <Label 
+               Text="Guide"
+               TextColor="White"
+               HorizontalOptions="Start"
+               VerticalOptions="Start"
+               Margin="5,75,0,0"
+               FontFamily="TimesNewRoman"
+               FontSize="20"
+               Grid.Row="0"
+               Grid.RowSpan="4"
+           />
+
+           <Label 
+               Text="To"
+               TextColor="White"
+               HorizontalOptions="Start"
+               VerticalOptions="Start" 
+               Margin="5,125,0,0"
+               FontFamily="TimesNewRoman"
+               FontSize="20"
+               Grid.Row="0"
+               Grid.RowSpan="4"
            />
 
             <Label 
-           Text="Guide"
-           TextColor="White"
-           HorizontalOptions="Start"
-           VerticalOptions="Start"
-           Margin="10"
-           FontFamily="TimesNewRoman"
-           FontSize="21"
-           
+                Text="Blake"
+                TextColor="White"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" 
+                Margin="5,175,0,0"
+                FontFamily="TimesNewRoman"
+                FontSize="20"
+               Grid.Row="0"
+               Grid.RowSpan="4"
            />
 
-            <Label 
-           Text="To"
-           TextColor="White"
-           HorizontalOptions="Start"
-           VerticalOptions="Start"
-           Margin="10"
-           FontFamily="TimesNewRoman"
-           FontSize="21"
-           
+        <Label 
+            Text="Bicknell"
+            TextColor="White"
+            HorizontalOptions="Start"
+            VerticalOptions="Start" 
+            Margin="5,225,10,10"
+            FontFamily="TimesNewRoman"
+            FontSize="20"
+            Grid.Row="0"
+            Grid.RowSpan="4"
            />
-
-            <Label 
-           Text="Blake"
-           TextColor="White"
-           HorizontalOptions="Start"
-           VerticalOptions="Start"
-           Margin="10"
-           FontFamily="TimesNewRoman"
-           FontSize="21"
-           
-           />
-
-            <Label 
-           Text="Bicknell"
-           TextColor="White"
-           HorizontalOptions="Start"
-           VerticalOptions="Start"
-           Margin="10"
-           FontFamily="TimesNewRoman"
-           FontSize="21"
-           
-           />
-
-        </StackLayout>
 
         <Button 
            x:Name="AboutMeButton"
