@@ -3,35 +3,39 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AboutMeV2.SkillPage">
     <ContentPage.Content>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
+        <ListView
+            x:Name="SkillList"
+            >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
 
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
+                            <Label
+                                Text="{Binding Name}" 
+                                FontAttributes="Bold"
+                                Font="28"
+                                Grid.Row="0"
+                                Grid.ColumnSpan="1"
+                            />
 
-            <Label
-                BackgroundColor="RoyalBlue"
-                Grid.Column="0"
-                Grid.ColumnSpan="3"
-                Grid.Row="0"
-                Grid.RowSpan="7"
-                >
-            </Label>
+                            <Label
+                                Text="{Binding Description}" 
+                                Font="22"
+                                Grid.Row="1"
+                                Grid.ColumnSpan="1"
+                            />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
 
-            <Label
-             Text="                             Welcome to Xamarin.Forms!" 
-             Grid.Column="0"
-             Grid.ColumnSpan="3"
-             Grid.Row="3"
-            />
-             
-        </Grid>
+        </ListView>
     </ContentPage.Content>
 </ContentPage>

@@ -16,5 +16,11 @@ namespace AboutMeV2
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void Mail_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MainPage());
+            DisplayAlert ("Sent!","Thank you for sending your mail","Ok");
+        }
+    }
 }
