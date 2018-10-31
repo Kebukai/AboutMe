@@ -10,21 +10,23 @@ using Xamarin.Forms.Xaml;
 
 namespace AboutMeV2
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class SkillPage : ContentPage
-	{
-        public ObservableCollection<Skill> Skills(get; set;)
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class SkillPage : ContentPage
+    {
+        public ObservableCollection<Skill> Skills { get; set;}
 		public SkillPage ()
 		{
 			InitializeComponent ();
 
             this.Skills = new ObservableCollection<Skill>();
             this.Skills.Add(new Skill
-                {Name = "A", Description = "B"});
+                {Name = "Public Speaking", Description = "Experience with speaking infront of people"});
             this.Skills.Add(new Skill
-                {Name = "A", Description = "B" });
+                {Name = "Creativity", Description = "Can think outside the box" });
             this.Skills.Add(new Skill
-                {Name = "A", Description = "B" });
+                {Name = "Procrastinating", Description = "Loves to do things at the last mintute" });
+
+            SkillList.ItemsSource = this.Skills;
         }
 	}
 
